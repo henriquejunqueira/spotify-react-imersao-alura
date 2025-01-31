@@ -88,3 +88,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 - Primeiro, remova a versão atual com o comando: `$ npm uninstall -g json-server`
 - Agora, instale a versão correta: `$ npm install -g json-server@0.17`
+
+![Tela]('./public/spotify.png')
