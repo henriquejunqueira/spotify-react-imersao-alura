@@ -1,20 +1,5 @@
 import React from 'react';
 import './PlaylistContainer.css';
-// import imgCard1 from '../../assets/playlist/1.jpeg';
-// import imgCard2 from '../../assets/playlist/2.png';
-// import imgCard3 from '../../assets/playlist/3.jpeg';
-// import imgCard4 from '../../assets/playlist/4.jpeg';
-// import imgCard5 from '../../assets/playlist/5.jpeg';
-// import imgCard6 from '../../assets/playlist/6.jpeg';
-// import imgCard7 from '../../assets/playlist/7.jpeg';
-// import imgCard8 from '../../assets/playlist/8.jpeg';
-// import imgCard9 from '../../assets/playlist/9.jpeg';
-// import imgCard10 from '../../assets/playlist/10.jpeg';
-// import imgCard11 from '../../assets/playlist/11.jpeg';
-// import imgCard12 from '../../assets/playlist/12.jpeg';
-// import imgCard13 from '../../assets/playlist/13.jpeg';
-// import imgCard14 from '../../assets/playlist/14.jpeg';
-// import imgCard15 from '../../assets/playlist/15.jpeg';
 
 const PlaylistContainer = ({ artists, showResults }) => {
   return (
