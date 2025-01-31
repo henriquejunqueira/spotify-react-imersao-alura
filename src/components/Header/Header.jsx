@@ -1,28 +1,32 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './Header.css';
+import smallRight from '../../assets/icons/small-right.png';
+import smallLeft from '../../assets/icons/small-left.png';
+import search from '../../assets/icons/search.png';
 
-const Header = () => {
+const Header = ({ searchTerm, setSearchTerm }) => {
   return (
     <nav className='header__navigation'>
       <div className='navigation'>
         <button className='arrow-left'>
-          <img src='./src/assets/icons/small-left.png' alt='Seta esquerda' />
+          <img src={smallLeft} alt='Seta esquerda' />
         </button>
         <button className='arrow-right'>
-          <img src='./src/assets/icons/small-right.png' alt='Seta direita' />
+          <img src={smallRight} alt='Seta direita' />
         </button>
       </div>
 
       <div className='header__search'>
-        <img src='./src/assets/icons/search.png' alt='' />
+        <img src={search} alt='' />
         <input
           id='search-input'
-          maxlength='800'
-          autocorrect='off'
-          autocapitalize='off'
-          spellcheck='false'
+          maxLength='800' // Alterado de maxlength para maxLength
+          autoCorrect='off'
+          autoCapitalize='off' // Alterado de autocapitalize para autoCapitalize
+          spellCheck='false'
           placeholder='O que você quer ouvir?'
-          value=''
+          value={searchTerm}
+          onChange={(e) => setSearchTerm(e.target.value)} // Atualiza o estado com o valor do input
         />
       </div>
 
