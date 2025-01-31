@@ -1,13 +1,13 @@
 import React from 'react';
 import './SidebarNavigation.css';
-import Logo from '/assets/icons/logo-spotify.png';
+// import Logo from '/assets/icons/logo-spotify.png';
 
 const SidebarNavigation = () => {
   return (
     <nav className='sidebar__navigation'>
       <div className='logo'>
         <a href=''>
-          <img src={Logo} alt='Logo do Spotify' />
+          <img src='/assets/icons/logo-spotify.png' alt='Logo do Spotify' />
         </a>
       </div>
       <ul>
